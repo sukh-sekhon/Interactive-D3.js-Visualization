@@ -3,7 +3,7 @@
 ## Preview Images
  
 ##### Primary View 
-![image](https://user-images.githubusercontent.com/50682117/57900921-0b934c00-7820-11e9-98ed-87dbbee080c2.png)
+![1](https://user-images.githubusercontent.com/50682117/57901173-2c0fd600-7821-11e9-97fc-4579406e043f.PNG)
 
 ##### Secondary View
-![image](https://user-images.githubusercontent.com/50682117/57900926-0e8e3c80-7820-11e9-9bd6-c61daa8de40e.png)
+![2](https://user-images.githubusercontent.com/50682117/57901172-2c0fd600-7821-11e9-99e3-f6ec6f26a796.PNG)
