@@ -2,8 +2,8 @@
 
 ## Preview Images
  
-##### Primary View 
+### Primary View 
 ![1](https://user-images.githubusercontent.com/50682117/57901173-2c0fd600-7821-11e9-97fc-4579406e043f.PNG)
 
-##### Secondary View
+### Secondary View
 ![2](https://user-images.githubusercontent.com/50682117/57901172-2c0fd600-7821-11e9-99e3-f6ec6f26a796.PNG)
