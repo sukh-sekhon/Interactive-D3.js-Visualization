@@ -359,7 +359,7 @@ function drawSecondaryLegend(){
     const barInnerWidth = 250 - 20;
     const barHeight = 25;
     const tickLength = barHeight + 10;
-    const legendHeight = tickLength + 10;
+    const legendHeight = tickLength + 12;
 
     const ratings = [ {'color':[ratingColors[0]],'value':ratingStart}, 
                       {'color':[ratingColors[1]],'value':ratingsEnd/2},
