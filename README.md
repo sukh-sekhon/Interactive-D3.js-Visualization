@@ -3,7 +3,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-JavaScript.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
 
 ## Demo
-### See a [live demo here](https://sukhjot-sekhon.github.io/Interactive-D3.js-Visualization/)
+### See it in action [here](https://sukhjot-sekhon.github.io/Interactive-D3.js-Visualization/)
 
 ## Preview
 __View the distribution sales by game genre per platform:__
