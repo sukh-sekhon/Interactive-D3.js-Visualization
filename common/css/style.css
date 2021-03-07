@@ -22,10 +22,9 @@ div.primary-screen div.title {
 }
 
 .chart {
+	float: left;
 	width: 23%;
 	max-width: 325px;
-	display: inline-block;
-	float: left;
 	margin-left: 5%;
 	margin-right: 5%;
 }
@@ -68,6 +67,7 @@ div.primary-screen div.title {
 	top: 20%;
 	right: 5%;
 	width: 20%;
+	min-width: 250px;
 	padding-top: 15px;
 	padding-right: 15px;
 	padding-left: 15px;
@@ -94,12 +94,6 @@ div.primary-screen div.title {
 
 .legend-name {
 	line-height: 15px;
-}
-
-.description-title {
-	font-weight: bold;
-	margin-bottom: 0px;
-	padding-left: 10px;
 }
 
 .tooltip {
@@ -137,18 +131,20 @@ div.secondary-screen div.title {
 
 .description {
 	padding: 10px;
-	font-size: 0.9em;
+	font-size: 0.7em;
+	font-style: italic;
 }
 
-.description-title {
-	padding: 1em 0 0.5em 0;
-}
-
-.secondary-screen svg {
+.secondary-screen svg:not(#legend) {
 	display: block;
 	height: 50vh;
 	max-height: 50%;
 	margin: 10% auto;
+}
+
+#legend {
+	display: block;
+	margin: auto;
 }
 
 .labels {
