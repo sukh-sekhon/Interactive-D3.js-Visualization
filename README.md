@@ -6,7 +6,7 @@
 ### See a [live demo here](https://sukhjot-sekhon.github.io/Interactive-D3.js-Visualization/)
 
 ## Preview
-__View the sales distribution of game genres by platform:__
+__View the distribution sales by game genre per platform:__
 ![1](https://user-images.githubusercontent.com/50682117/110227455-eae52c00-7eb5-11eb-963e-1bc6077c4a81.PNG)
 
 __View the individual titles in your selection and associated ratings:__ 
