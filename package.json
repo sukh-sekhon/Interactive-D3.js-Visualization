@@ -1,7 +1,7 @@
 {
   "name": "Interactive-D3.js-Visualization",
   "version": "1.0.0",
-  "description": "[![forthebadge](https://forthebadge.com/images/badges/made-with-JavaScript.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d common"
@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/sukhjot-sekhon/Interactive-D3.js-Visualization/issues"
   },
-  "homepage": "https://sukhjot-sekhon.github.io/D3Visualization",
+  "homepage": "https://sukhjot-sekhon.github.io/Interactive-D3.js-Visualization",
   "dependencies": {
     "gh-pages": "^3.1.0"
   }
