@@ -16,9 +16,14 @@ const color = [
 ];
 
 // Colors for rating scale
+const ratingColors = [
+    '#d73027',
+    '#fee08b',
+    '#1a9850'
+];
 const colorGYR = d3.scaleLinear()
     .domain([1, 5, 10])
-    .range(['#d73027', '#fee08b', '#1a9850'])
+    .range(ratingColors)
     .interpolate(d3.interpolateHcl);
 
 // Parsing data and setting up for primary/secondary screens
@@ -75,7 +80,8 @@ d3.csv('./data/dataset.csv')
         });
 
         // Draw legends (both primary and secondary)
-        drawLegends();
+        drawPrimaryLegend();
+        drawSecondaryLegend();
     })
 
     // throw error if .csv file isn't available
@@ -144,7 +150,9 @@ function drawPrimary(chartArea, platformName, totalSales, genreData) {
                     '<b>Sales</b>: ' + d.data.value.sales + 'M</br>' +
                     '<b>Games Count</b>: ' + d.data.value.gameCnt)
                 .style('display', 'block')
-                .style('opacity', 1);
+                .style('opacity', 1)
+                .style("left", d3.select(this).attr("cx") + "px")     
+                .style("top", d3.select(this).attr("cy") + "px");
             // Change sector to expanded sector
             d3.select(this.previousElementSibling)
                 .transition()
@@ -317,8 +325,8 @@ function drawSecondary (platform, genre, totalSales) {
         })
 }
 
-// Draw legends (primary and secondary)
-function drawLegends() {
+// Draw the primary legend
+function drawPrimaryLegend(){
     let legend = document.querySelector('.primary-info');
     let description = legend.querySelector('.description');
     let row, box, text;
@@ -339,26 +347,59 @@ function drawLegends() {
         text.innerText = g;
         row.appendChild(text);
     });
+}
 
-    legend = document.querySelector('.secondary-info');
-    description = legend.querySelector('.description');
+// Draw the secondary legend
+function drawSecondaryLegend(){
+    let legend = document.getElementById('legend-gradient');
+    
+    const ratingStart = 0;
+    const ratingsEnd = 10;
+    const barWidth = 250;
+    const barInnerWidth = 250 - 20;
+    const barHeight = 25;
+    const tickLength = barHeight + 10;
+    const legendHeight = tickLength + 10;
 
-    // Secondary screen legend (Rating)
-    const ratesValue = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    const ratesText = ['0', '1', '2', '3', '4', '5',  '6', '7',  '8', '9', '10'];
-    ratesValue.forEach(function(r, idx) {
-        row = document.createElement('div');
-        row.classList.add('legend-row');
-        legend.insertBefore(row, description);
+    const ratings = [ {'color':[ratingColors[0]],'value':ratingStart}, 
+                      {'color':[ratingColors[1]],'value':ratingsEnd/2},
+                      {'color':[ratingColors[2]],'value':ratingsEnd}];
+    
+    const extent = d3.extent(ratings, d => d.value);
 
-        box = document.createElement('div');
-        box.classList.add('legend-box');
-        box.style.backgroundColor = colorGYR(r);
-        row.appendChild(box);
+    const xScale = d3.scaleLinear()
+        .range([0, barInnerWidth])
+        .domain(extent);
 
-        text = document.createElement('div');
-        text.classList.add('legend-name');
-        text.innerText = ratesText[idx];
-        row.appendChild(text);
-    });
+    const xAxis = d3.axisBottom(xScale)
+        .tickSize(tickLength)
+        .tickValues(Array.from(Array(ratingsEnd + 1).keys()).filter((e) => e % 2 == 0));
+
+    const svg = d3.select(legend)
+        .append('svg')
+        .attr('id', 'legend')
+        .attr('width', barWidth)
+        .attr('height', legendHeight);
+
+    const g = svg.append('g')
+        .attr('transform', 'translate(10, 0)');
+
+    const linearGradient = svg.append('defs')
+        .append('linearGradient')
+        .attr('id', 'legendGradient');
+
+    linearGradient.selectAll('stop')
+        .data(ratings)
+        .enter().append('stop')
+        .attr('offset', d => ((d.value - extent[0]) / (extent[1] - extent[0]) * 100) + '%')
+        .attr('stop-color', d => d.color);
+
+    g.append('rect')
+        .attr('width', barInnerWidth)
+        .attr('height', barHeight)
+        .style('fill', 'url(#legendGradient)');
+
+    g.append('g')
+        .call(xAxis)
+        .select('.domain').remove();
 }
