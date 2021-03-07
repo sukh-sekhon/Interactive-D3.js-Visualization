@@ -145,6 +145,13 @@ div.secondary-screen div.title {
 #legend {
 	display: block;
 	margin: auto;
+	font-size: 12px;
+
+}
+
+#legend text {
+	font-size: 12px;
+	font-weight: 600;
 }
 
 .labels {
