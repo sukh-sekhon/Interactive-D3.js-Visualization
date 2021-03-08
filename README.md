@@ -4,12 +4,12 @@
 
 ## [🚀Launch Demo🚀](https://sukhjot-sekhon.github.io/Interactive-D3.js-Visualization/) 
 
-## Info
-Check out my [📖report📖](./Report.pdf) if you're interested in the data or design process.
+## Background
+Check out my [Report](./Report.pdf) if you're interested in the data or design process.
 
 ## Preview
-View the distribution sales by game genre per platform:
-<img src="https://user-images.githubusercontent.com/50682117/110227455-eae52c00-7eb5-11eb-963e-1bc6077c4a81.PNG" height="250">
+View the distribution sales by game genre per platform:\
+<img src="https://user-images.githubusercontent.com/50682117/110227455-eae52c00-7eb5-11eb-963e-1bc6077c4a81.PNG" width="350">
 
-View the individual titles in your selection and associated ratings:
-<img src="https://user-images.githubusercontent.com/50682117/110227459-f173a380-7eb5-11eb-9442-a25ce26484ac.PNG" height="250">
+View the individual titles in your selection and associated ratings:\
+<img src="https://user-images.githubusercontent.com/50682117/110227459-f173a380-7eb5-11eb-9442-a25ce26484ac.PNG" width="350">
