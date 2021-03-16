@@ -4,7 +4,7 @@
 
 ## [Launch Demo](https://sukhjot-sekhon.github.io/Interactive-D3.js-Visualization/) 
 
-<p align="center"><a href="https://sukhjot-sekhon.github.io/GridFinder">
+<p align="center"><a href="https://sukhjot-sekhon.github.io/Interactive-D3.js-Visualization/">
   <img src="https://github.com/sukhjot-sekhon/Public/blob/master/resources/D3Visualization_demo.gif" alt="D3 Visualization Demo"/>
 </a></p>
 
