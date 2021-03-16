@@ -2,7 +2,7 @@
 # Distribution of Game Genres by Platform 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-JavaScript.svg)](./common/js/index.js) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](./common/css/style.css) [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](./common/index.html)
 
-## [🚀Launch Demo🚀](https://sukhjot-sekhon.github.io/Interactive-D3.js-Visualization/) 
+## [Launch Demo](https://sukhjot-sekhon.github.io/Interactive-D3.js-Visualization/) 
 
 ## Background
 Check out my [Report](./Report.pdf) if you're interested in the data or design process.
