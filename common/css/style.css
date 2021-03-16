@@ -33,6 +33,10 @@ div.primary-screen div.title {
 	width: 100%;
 }
 
+svg text {
+	user-select: none;
+}
+
 .chart svg text {
 	font-size: 2.2em;
 }

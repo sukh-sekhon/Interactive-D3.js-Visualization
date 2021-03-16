@@ -4,12 +4,13 @@
 
 ## [Launch Demo](https://sukhjot-sekhon.github.io/Interactive-D3.js-Visualization/) 
 
+<p align="center"><a href="https://sukhjot-sekhon.github.io/GridFinder">
+  <img src="https://github.com/sukhjot-sekhon/Public/blob/master/resources/D3Visualization_demo.gif" alt="D3 Visualization Demo" width="600"/>
+</a></p>
+
 ## Background
 Check out my [Report](./Report.pdf) if you're interested in the data or design process.
 
-## Preview
-__Primary Screen__: View the distribution sales by game genre per platform\
-<img src="https://user-images.githubusercontent.com/50682117/110227455-eae52c00-7eb5-11eb-963e-1bc6077c4a81.PNG" width="590px">
-
-__Secondary Screen__: View the individual titles in your selection and associated ratings\
-<img src="https://user-images.githubusercontent.com/50682117/110227459-f173a380-7eb5-11eb-9442-a25ce26484ac.PNG" width="590px">
+__Screens__:
+* Primary: View the distribution of sales by game genre per platform.
+* Secondary: View the individual titles in your selection and associated ratings.
